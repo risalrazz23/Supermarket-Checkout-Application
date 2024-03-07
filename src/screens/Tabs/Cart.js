@@ -229,9 +229,9 @@ setIsRemoveModalOpen(false)
   const Payment = () => {
     RNUpiPayment.initializePayment(
       {
-        vpa: '9567473782@paytm', // or can be john@ybl or mobileNo@upi
+        vpa: `${VPA_ID}`, // or can be john@ybl or mobileNo@upi
         payeeName: 'CartPay',
-        amount: '1',
+        amount: cart.totalPrice,
         transactionRef: 'aasf-332-aoei-fn',
       },
       successCallback,
